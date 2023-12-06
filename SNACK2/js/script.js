@@ -31,3 +31,5 @@ console.log(numeri)
 squadreDiCalcio.puntiFatti = numeriCasuali() 
 console.log(squadreDiCalcio);
 
+let nomeEFalli = squadreDiCalcio.map(({nome, falliSubiti}) => ({ nome, falliSubiti }));
+console.log(nomeEFalli)
