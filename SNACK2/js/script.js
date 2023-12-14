@@ -7,26 +7,28 @@ function numeriCasuali() {
 let squadreDiCalcio = [
     {
         nome: "Roma",
-        puntiFatti: numeriCasuali(),
-        falliSubiti: numeriCasuali()
+        puntiFatti: 0,
+        falliSubiti: 0,
     },
     {
         nome: "Lazio",
-        puntiFatti: numeriCasuali(),
-        falliSubiti: numeriCasuali()
+        puntiFatti: 0,
+        falliSubiti: 0,
     },
     {
         nome: "Milan",
-        puntiFatti: numeriCasuali(),
-        falliSubiti: numeriCasuali()
+        puntiFatti: 0,
+        falliSubiti: 0,
     },
 ];
 
+console.log(squadreDiCalcio)
 
-
-
-let numeri=numeriCasuali()
-console.log(numeri)
+// Sostituisco con i numeri casuali
+squadreDiCalcio.forEach(squadra => {
+    squadra.puntiFatti = numeriCasuali();
+    squadra.falliSubiti = numeriCasuali();
+});
 
 squadreDiCalcio.puntiFatti = numeriCasuali() 
 console.log(squadreDiCalcio);
